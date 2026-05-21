@@ -10,27 +10,28 @@ public class Main {
     static String contrasena;
     public static void main(String[] args) {
 
-        int opcion;
+        String opcion;
         do {
             System.out.println("Elija una opción");
             System.out.println("1- Login");
             System.out.println("2- Registro");
             System.out.println("3- Salir");
             Scanner scan = new Scanner(System.in);
-            opcion = scan.nextInt();
+            opcion = scan.nextLine();
             switch (opcion){
-                case 1:
+                case "1":
                     login();
                     break;
-                case 2:
+                case "2":
                     registro();
                     break;
-                default:
+                case "3":
                     System.out.println("Saliendo...");
-                    opcion = 3;
+                default:
+                    System.out.println("Opción invalida");
                     break;
             }
-        } while (opcion != 3);
+        } while (!opcion.equals("3"));
 
     }
 
