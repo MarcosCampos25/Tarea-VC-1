@@ -4,7 +4,7 @@ public class Usuario {
     String nombre;
     String apellido;
     String email;
-    String password;
+    String contrasena;
     String perfil;
     String pais;
 }
