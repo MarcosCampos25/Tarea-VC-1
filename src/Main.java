@@ -81,16 +81,18 @@ public class Main {
         System.out.print("Ingrese Contraseña: ");
         String contrasenaIngresada = scan.nextLine();
 
-        if (nombreIngresado.equals(nombre)) {
-            if (contrasenaIngresada.equals(contrasena)) {
-                System.out.println("Usuario logueado con exito");
-            } else {
-                System.out.println("Contraseña incorrecta");
-            }
-        }
-         else {
+        if (!nombreIngresado.equals(nombre)) {
             System.out.println("No existe el usuario en el sistema.");
+            return;
         }
+
+        if (!contrasenaIngresada.equals(contrasena)) {
+            System.out.println("Contraseña incorrecta");
+            return;
+        }
+
+        System.out.println("Logueado con éxito");
+
     }
 
 }
