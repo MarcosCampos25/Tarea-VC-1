@@ -1,11 +1,12 @@
 package model;
 
-public class Usuario {
+abstract class Usuario {
     private String nombre;
     private String apellido;
     private String email;
     private String contrasena;
     private String pais;
+    private String perfil;
 
     public String getNombre() {
         return nombre;
@@ -27,6 +28,8 @@ public class Usuario {
         return pais;
     }
 
+    public String getPerfil() { return perfil; }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -47,12 +50,17 @@ public class Usuario {
         this.pais = pais;
     }
 
-    public Usuario(String nombre, String apellido, String email, String contrasena, String pais) {
+    public void setPerfil(String perfil) { this.perfil = perfil; }
+
+    public abstract boolean puedeGestionarUsuarios();
+
+    public Usuario(String nombre, String apellido, String email, String contrasena, String pais, String perfil) {
         setNombre(nombre);
         setApellido(apellido);
         setContrasena(contrasena);
         setEmail(email);
         setPais(pais);
+        setPerfil(perfil);
     }
 
 }

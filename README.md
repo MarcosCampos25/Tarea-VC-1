@@ -72,4 +72,4 @@ Permite listar todos los usuarios registrados en el sistema.
 Permite eliminar usuarios que no tengan perfil administrador.
 
 # Diagrama UML
-![img_1.png](diagrama_uml.png)
+![img.png](diagrama_uml.png)
