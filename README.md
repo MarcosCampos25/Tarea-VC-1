@@ -71,5 +71,8 @@ Permite listar todos los usuarios registrados en el sistema.
 ### Eliminar usuario
 Permite eliminar usuarios que no tengan perfil administrador.
 
+## Datos de prueba
+- Admin: test2@test.com / 123456789
+
 # Diagrama UML
 ![img.png](diagrama_uml.png)

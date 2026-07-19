@@ -11,4 +11,9 @@ public class Admin extends Usuario{
         return true;
     }
 
+    @Override
+    public boolean seLePuedeReiniciarContrasena() {
+        return true;
+    }
+
 }

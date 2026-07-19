@@ -11,4 +11,9 @@ public class Tester extends Usuario {
         return false;
     }
 
+    @Override
+    public boolean seLePuedeReiniciarContrasena() {
+        return false;
+    }
+
 }

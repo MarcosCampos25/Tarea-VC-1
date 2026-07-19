@@ -54,6 +54,8 @@ abstract class Usuario {
 
     public abstract boolean puedeGestionarUsuarios();
 
+    public abstract boolean seLePuedeReiniciarContrasena();
+
     public Usuario(String nombre, String apellido, String email, String contrasena, String pais, String perfil) {
         setNombre(nombre);
         setApellido(apellido);
