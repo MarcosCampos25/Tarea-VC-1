@@ -75,4 +75,4 @@ Permite eliminar usuarios que no tengan perfil administrador.
 - Admin: test2@test.com / 123456789
 
 # Diagrama UML
-![img.png](diagrama_uml.png)
+![img.png](diagrama_uml_entrega_final.png)
